@@ -28,11 +28,17 @@ header {
 .headerContainer {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
   width: 100%;
   background: #ccc;
   position: fixed;
   top: 0;
   z-index: 10;
+}
+.headerContainer__content {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
 }
 
 .dropMenu {
@@ -47,8 +53,9 @@ header {
 }
 
 .name {
-  margin-left: 3rem;
-  margin-right: 5rem;
+  margin-left: 2%;
+  font-weight: 1000;
+  font-size: 2rem;
 }
 
 .menu {
