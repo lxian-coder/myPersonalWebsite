@@ -21,6 +21,9 @@ header{
     justify-content:center;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 1300px;
+    width: 100%;
+    margin:auto;
   
 }
 .headerContainer{
@@ -103,6 +106,7 @@ header{
 
 // about me  page
 .side1Container{
+    box-sizing: border-box;
     flex-grow: 0;
     max-width: 22%;
     min-width: 197.5px;
@@ -161,7 +165,8 @@ header{
 }
 
 .side2Container{
-    flex-grow: 0;
+    box-sizing: border-box;
+    
     margin-top: 13%;
     max-width: 72%;
     width: 100%;
