@@ -285,7 +285,22 @@ header {
   transition: all 1s ease;
 }
 .part2__body__icon:hover {
-  transform: translateY(0.625rem);
+  animation-name: upDown;
+  animation-duration: 1s;
+}
+@keyframes upDown {
+  0% {
+    transform: translateY(0rem);
+  }
+  25% {
+    transform: translateY(-0.625rem);
+  }
+  75% {
+    transform: translateY(0.625rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
 }
 .part2__body__h3 {
   max-width: 25%;
