@@ -6,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 header{
     box-sizing: border-box;
     display: flex;
@@ -114,8 +115,14 @@ header{
 // about me  page
 .side1Container{
     box-sizing: border-box;
-    flex-grow: 0;
-    max-width: 22%;
+    @media only screen  and (max-width:800px) {
+        max-width:90%;
+       
+    }
+    @media only screen and (min-width: 801px){
+        max-width: 22%;
+    }
+
     min-width: 197.5px;
     min-height: 1000px;
     width: 100%;
@@ -172,6 +179,9 @@ header{
 }
 
 .side2Container{
+    @media only screen  and (max-width:800px) {
+        max-width:90%;
+    }
     box-sizing: border-box;
     
     margin-top: 13%;
