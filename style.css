@@ -421,6 +421,10 @@ p {
   padding-top: 10px;
   margin-left: 30px;
   margin-bottom: 50px;
+  transition: all 0.5s ease;
+}
+.entry:hover {
+  box-shadow: 0px 10px 6px 5px rgba(0, 0, 0, 0.3);
 }
 .entry::before {
   content: " ";
