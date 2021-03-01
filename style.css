@@ -112,7 +112,7 @@ p {
 
 .footerContainer {
   width: 100%;
-  height: 50px;
+  height: 60px;
   display: flex;
   z-index: 0;
   position: absolute;
@@ -277,11 +277,10 @@ p {
   box-shadow: 3px 10px 20px 10px #ccc;
   padding: 3% 5%;
   box-sizing: border-box;
-  min-height: 1000px;
+  height: max-content;
   margin-top: 15%;
   max-width: 72%;
   width: 100%;
-  height: 1000px;
   border-radius: 10px;
   margin-right: 1%;
   margin-bottom: 13%;
@@ -398,6 +397,70 @@ p {
 .seemore:hover {
   color: #5371ff;
   font-style: italic;
+}
+
+.party2__body__title2 {
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+
+.hrLine {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.entryContainer {
+  border-left: solid #eee 2px;
+  padding-top: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.entry {
+  border: solid #eee 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+.entry::before {
+  content: " ";
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background-color: #5371ff;
+  display: inline-block;
+  box-shadow: 0 0 0 0.1875rem rgba(48, 76, 253, 0.25);
+  position: relative;
+  left: -58px;
+}
+.entry::after {
+  content: "";
+  display: inline-block;
+  background: #5371ff;
+  height: 2px;
+  width: 21px;
+  border-radius: 1px;
+  position: relative;
+  left: -43px;
+  top: -135px;
+}
+.entry__h4 {
+  margin-bottom: 20px;
+}
+.entry__p {
+  font-size: 13px;
+  letter-spacing: 0.7;
+  max-width: 400px;
+}
+
+.lastEntry {
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
