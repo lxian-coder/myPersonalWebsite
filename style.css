@@ -268,11 +268,13 @@ header {
   }
 }
 .side2Container__part2 {
-  margin-top: 50px;
+  margin-top: 65px;
+  width: 100%;
+  position: relative;
 }
 
 .part2__body {
-  margin-top: 30px;
+  margin-top: 38px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -286,8 +288,27 @@ header {
 }
 .part2__body__icon:hover {
   animation-name: upDown;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
 }
+.part2__body__h2 {
+  text-shadow: 0.08em 0.08em 0.03em black;
+  color: gray;
+}
+.part2__body__h3 {
+  max-width: 25%;
+  width: 100%;
+  margin-left: 25px;
+  margin-right: 10px;
+}
+.part2__body__h3:hover {
+  animation-name: upDown;
+  animation-duration: 0.8s;
+}
+.part2__body__p {
+  max-width: 60%;
+  width: 100%;
+}
+
 @keyframes upDown {
   0% {
     transform: translateY(0rem);
@@ -302,28 +323,18 @@ header {
     transform: translateY(0rem);
   }
 }
-.part2__body__h3 {
-  max-width: 25%;
-  width: 100%;
-  margin-left: 25px;
-  margin-right: 10px;
-}
-.part2__body__p {
-  max-width: 60%;
-  width: 100%;
-}
-
 .seemore {
+  margin-top: 15px;
+  margin-left: 85%;
+  top: 100px;
   font-size: 15px;
   font-weight: 500;
-  margin: 20px;
-  position: absolute;
-  right: 110px;
 }
 .seemore__a {
   text-decoration: none;
 }
 .seemore::after {
+  margin-left: 85%;
   content: " ";
   height: 2px;
   max-width: 130px;
@@ -338,7 +349,7 @@ header {
   transform: scale(0.3, 1);
 }
 .seemore:hover::after {
-  transform: scale(1);
+  transform: scale(0.6);
 }
 .seemore:hover {
   color: #5371ff;
