@@ -135,7 +135,6 @@ p {
 .side1Container {
   box-sizing: border-box;
   min-width: 197.5px;
-  min-height: 1000px;
   width: 100%;
   border-radius: 10px;
   margin-top: 15%;
@@ -217,6 +216,7 @@ p {
 
 .side1__attachememts {
   padding: 0px 15px;
+  margin-top: 40px;
 }
 
 .attachment__download {
