@@ -76,6 +76,8 @@ p {
 }
 .menu__item {
   margin-left: 2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .menu__link {
   position: relative;
@@ -141,6 +143,8 @@ p {
 @media only screen and (max-width: 800px) {
   .side1Container {
     max-width: 90%;
+    margin-bottom: 0px;
+    min-height: max-content;
   }
 }
 @media only screen and (min-width: 801px) {
@@ -469,7 +473,7 @@ textarea:focus, input:focus {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 35px;
   position: relative;
 }
 
@@ -487,24 +491,134 @@ textarea:focus, input:focus {
 }
 
 .formicon {
-  font-size: 18px;
+  font-size: 20px;
   color: #8697a8;
   position: relative;
-  bottom: -45px;
+  bottom: -47px;
   right: -20px;
 }
 
 .label {
-  color: #8697a8;
+  color: #585858;
   font-size: 13px;
   position: relative;
   bottom: -41.2px;
   right: -25px;
+  transition: all 0.3s ease;
 }
 
 .reset {
   bottom: 0px;
   right: 0px;
+}
+
+.messagetextArea {
+  min-height: 230px;
+  padding: 11px 45px;
+}
+
+.words {
+  margin-top: 20px;
+}
+
+.span::before {
+  content: "";
+  height: 45px;
+  width: 110%;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  background-color: rgba(34, 148, 245, 0.55);
+  transform: scale(0, 1);
+  transform-origin: left;
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+
+.span::after {
+  content: "";
+  height: 45px;
+  width: 110%;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  background-color: rgba(34, 148, 245, 0.55);
+  transform: scale(0, 1);
+  transform-origin: right;
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+
+.formButton {
+  margin-top: 20px;
+  min-height: 40px;
+  border-radius: 10px;
+  border: 1px solid #00adef;
+  color: #00adef;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  z-index: 2;
+}
+.formButton:hover {
+  color: white;
+  border: white;
+}
+.formButton::before {
+  content: "";
+  height: 45px;
+  width: 101%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(34, 148, 245, 0.55);
+  transform: scale(0, 1);
+  transform-origin: left;
+  transition: all 0.4s ease;
+  transition-delay: 0.2s;
+  z-index: 0;
+}
+.formButton:hover::before {
+  transform: scale(1, 1);
+}
+.formButton::after {
+  content: "";
+  height: 50px;
+  width: 110%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(34, 148, 245, 0.55);
+  transform: scale(0, 1);
+  transform-origin: right;
+  transition: all 0.4s ease;
+  transition-delay: 0.2s;
+  z-index: 0;
+}
+.formButton:hover::after {
+  transform: scale(1, 1);
+}
+
+.span {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.send {
+  position: relative;
+  z-index: 10;
+}
+
+.span:hover::before {
+  transform: scale(1, 1);
+}
+
+.span:hover::after {
+  transform: scale(1, 1);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -86,7 +86,7 @@
             <h2 class="party2__body__title2">CONTACT <span class="part2__body__h2"></span>
                 <span class="part2__body__shadowtext1">CONTACT</span> 
                </h2>
-               <p>I am not afraid of growing slowly, I am only afraid of standing still.</p>
+               <p class="words">I am not afraid of growing slowly, I am only afraid of standing still. -- Darcy Xian</p>
 
                
                 <form
@@ -114,7 +114,7 @@
                 <textarea brand="message" class="messagetextArea textarea" name="message"></textarea>
             </div>
 
-                <button type="submit">SUBMIT</button>
+                <button type="submit" class="formButton"><div class="span"><div class="send">SEND</div></button>
               </form>
             </div>
         </section >
@@ -125,49 +125,11 @@
             </footer>
        </section>
      
- 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./sameHeight.js"></script>
     <script src="./header.js"></script>
-    <script>
-         
-     
-        $("*").on("click", function(){
-         let focused = document.activeElement;
-         let brand = $(focused).attr("brand");
-        
-         $(".textarea").each(function(){
-           let brand2 = $(this).attr("brand");
-           // if the input element is focused, move label out
-           if(brand2 === brand){
-               console.log("success");
-             moveOut(brand2);
-         // if the input is not empty, move label out
-           }else if($(this).val()){
-               moveOut(brand2);
-        // all others move label in
-           }else{
-               moveIn(brand2);
-           }
-         });
-
-        })
-        
-      function moveOut(getClass){
-          console.log("OUT getclass:"+getClass);
-          $("."+getClass).css({"bottom":"0px","right":"0px"});
-      }
-
-      function moveIn(getClass){
-          console.log( "IN getclass:"+getClass);
-        $("."+getClass).each(function(){
-           $(this).css({"bottom":"-41.2px","right":"-25px"});
-        })
-    }
-
-
-    </script>
+    <script src="./formEffect.js"> </script>
  
     
 </body>
