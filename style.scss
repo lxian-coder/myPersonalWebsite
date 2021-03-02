@@ -24,7 +24,7 @@ p{
     position: relative;
     display: flex;
     justify-content:center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     max-width: 1300px;
     width: 100%;
@@ -51,10 +51,12 @@ p{
    &__body{
        list-style: none;
    }
+   
 }
 .headerSvg{
     margin-right: 3rem;
 }
+
 .name{
    margin-left: 2%;
    font-weight: 1000;
@@ -132,17 +134,12 @@ p{
 // about me  page
 .side1Container{
     box-sizing: border-box;
-    @media only screen  and (max-width:800px) {
-        max-width:90%;
-        margin-bottom: 0px;
-        min-height: max-content;
-    }
+  
     @media only screen and (min-width: 801px){
         max-width: 22%;
     }
 
     min-width: 197.5px;
-    
     width: 100%;
     border-radius: 10px;
     margin-top: 15%;
@@ -271,12 +268,11 @@ p{
 
  
     @media only screen  and (max-width:800px) {
-        max-width:90%;
+        max-width:100%;
     }
     box-shadow: 3px 10px 20px 10px #ccc;
     padding: 3% 5%;
     box-sizing: border-box;
-    height: max-content;
     margin-top: 15%;
     max-width: 72%;
     width: 100%;
