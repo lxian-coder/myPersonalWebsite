@@ -1,55 +1,40 @@
 let turn = true;
 let dropMenuStatus = false;
 // when users open a new page, app need to display correct content according to the screen width
+$(".dropMenu__body").addClass('none');
 if(window.innerWidth <= 800){
    // find the screen is small
-    turn = false;
-}
-
-function toggleMenu() { $(document).ready(function () {
-    $(".menu").slideToggle(1);});}
-
-    function toggleSvg() { $(document).ready(function () {
-    $(".headerSvg").slideToggle(1);});} 
-
-    function toggleDropMenu() { $(document).ready(function () {
-    $(".dropMenu").slideToggle(1);});} 
-    function hideDropMenu() { $(document).ready(function () {
-        $(".dropMenu").hide(1);});} 
-
-if(turn){
-    // hide svg and dropmenu
-    toggleSvg();
-    toggleDropMenu();
-    console.log("tooggle");
-}else{
-    // hide menu and dropmenu
-    toggleMenu();
-    toggleDropMenu();
     
+    $(".menu").addClass('none');
+}else{
+    $(".headerSvg").addClass('none');
+    turn = true;
 }
+
+
+
 $(document).ready(function () {
     $(".headerSvg").click(function () {
-    toggleDropMenu();
+        $(".dropMenu__body").removeClass('none');
+        $(".dropMenu").slideToggle(150);
 } )})
 
   
-
 function resize() {
 
    width = window.innerWidth;
-   // if screen shrank lower than 800, toggle menu and display svg
+   // if screen shrank lower than 800, move menu and display svg
    if(width<800 && turn){
-       toggleMenu();
-       toggleSvg();
-       hideDropMenu();
+    $(".menu").addClass('none');
+    $(".headerSvg").removeClass('none');
+    $(".dropMenu__body").removeClass('none');
        turn = false;
    }
    // if screen back to more than 800px, header back to normal by toggle twice.
    if(width >= 800 && turn === false){
-      hideDropMenu()
-      toggleMenu();
-      toggleSvg();
+    $(".menu").removeClass('none');
+    $(".headerSvg").addClass('none');
+    $(".dropMenu__body").addClass('none');
       turn=true;
 }
 
@@ -69,7 +54,6 @@ $(".menu__link").each(function () {
   })
   // 把url 转换成href 一样的长度
 function returnUrl(urlString) {
-     
      let number = urlString.lastIndexOf("/");
      let a = urlString.substring(number);
      let result = "."+a;

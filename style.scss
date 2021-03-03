@@ -50,11 +50,19 @@ p{
    width: 100%;
    &__body{
        list-style: none;
-   }
-   
+   };
+  
 }
+
+.none{
+    display: none !important;
+    
+}
+
+
 .headerSvg{
     margin-right: 3rem;
+
 }
 
 .name{
