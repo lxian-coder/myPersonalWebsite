@@ -63,6 +63,12 @@ p {
   font-size: 2rem;
   color: #5371ff;
   letter-spacing: 1px;
+  min-width: 120px;
+  width: 100%;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menu {

@@ -63,6 +63,12 @@ p{
    font-size: 2rem;
    color:$myblue;
    letter-spacing: 1px;
+    min-width:120px ;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
    
 }
 
@@ -157,7 +163,7 @@ p{
    align-items: center;
    position: relative;
    flex-direction: column;
- 
+
 }
 .side1Container__part1__img{
     width: 100%;
