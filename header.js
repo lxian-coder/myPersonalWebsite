@@ -16,14 +16,14 @@ if(window.innerWidth <= 800){
 $(document).ready(function () {
     $(".headerSvg").click(function () {
         $(".dropMenu__body").removeClass('none');
-        $(".dropMenu").slideToggle(150);
+        $(".dropMenu").slideToggle(450);
 } )})
 
   
 function resize() {
 
    width = window.innerWidth;
-   // if screen shrank lower than 800, move menu and display svg
+   // if screen shrink lower than 800, move menu and display svg
    if(width<800 && turn){
     $(".menu").addClass('none');
     $(".headerSvg").removeClass('none');
@@ -41,7 +41,7 @@ function resize() {
 }
 window.onresize = resize;
 
-//锁定正在访问的网页标签变色
+//锁定正在访问的网页标签变色 
 let url = window.location.pathname;
 console.log( url);
 // find the target  <a>  and add a class

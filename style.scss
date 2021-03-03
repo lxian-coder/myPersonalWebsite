@@ -51,9 +51,15 @@ p{
    &__body{
        list-style: none;
    };
-  
 }
 
+
+.li{
+    margin-top: 10px;
+    margin-bottom: 17px;
+    margin-left: 20px;
+    font-weight: 800;
+}
 .none{
     display: none !important;
     
@@ -62,9 +68,8 @@ p{
 
 .headerSvg{
     margin-right: 3rem;
-
+    
 }
-
 .name{
    margin-left: 2%;
    font-weight: 1000;
@@ -165,7 +170,7 @@ p{
 } 
 .sid1Container__part1{
    margin-top: 15%;
-   background: chocolate;
+
    display: flex;
    justify-content: space-around;
    align-items: center;
