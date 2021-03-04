@@ -18,9 +18,7 @@ $(document).ready(function () {
 function noneDropMenu(){
   if(window.outerWidth > 800 && inSmall){
     $(".dropMenu__body").css('display','none');
-
     console.log("goo");
-  
     inSmall = false;
     firstClick = true;
   }

@@ -781,9 +781,29 @@ textarea:focus, input:focus {
 .homeContainer {
   min-height: 1200px;
   width: 100%;
-  background-image: url(./assets/homeBackground.jpg);
+  background-image: url(./assets/homeBackgroundtext.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media only screen and (max-width: 360px) {
+  .homeContainer {
+    min-height: 450px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .homeContainer {
+    min-height: 600px;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 740px) {
+  .homeContainer {
+    min-height: 800px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .homeContainer {
+    min-height: 1200px;
+  }
 }
 
 .drumbody {

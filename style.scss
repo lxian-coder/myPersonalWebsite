@@ -786,9 +786,21 @@ textarea:focus, input:focus {
    
 }
 .homeContainer{
+    @media only screen  and (max-width:360px) {
+        min-height: 450px;
+    }
+    @media only screen  and (max-width:425px) {
+        min-height: 600px;
+    }
+    @media only screen  and (min-width:426px) and (max-width:740px){
+        min-height: 800px;
+    }
+    @media only screen  and (min-width:800px) {
+        min-height: 1200px;
+    }
     min-height: 1200px;
     width: 100%;
-    background-image:url(./assets/homeBackground.jpg);
+    background-image: url(./assets/homeBackgroundtext.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
