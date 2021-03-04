@@ -47,19 +47,27 @@ p{
          margin: auto;
      }
 }
+.li{
+    height: 100%;
+    width: 100%;
+   
+    display: none;
+
+    }
 
    
    .dropMenu__body{
        list-style: none;
        width: 100%;
        @media only screen and (min-width:801px) {
-       display: none;
-   };
-   @media only screen and (max-width:800px) {
-    display: flex;
-    flex-direction: column;
+        display: none;
     
-};
+    };
+    @media only screen and (max-width:800px) {
+        display: flex;
+        flex-direction: column;
+    
+    };
 }
 
 .li{

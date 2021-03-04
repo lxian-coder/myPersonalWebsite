@@ -1,11 +1,26 @@
+let firstClick = true;
+let inbig = true;
 
 
-$(document).ready(function () {
     $(".headerSvg").click(function () {
+         if(firstClick){
+          $(".li").css({ "display":"flex"});
+          console.log("jsdj");
+           firstClick = false;
+           inbig = false;
+           $(".dropMenu__body").slideToggle(450);
+        }else{
           $(".dropMenu__body").slideToggle(450);
-         } )
-} )
+         }
+}) 
 
+function resetClick(){
+  if(window.outerWidth > 800 && inbig === false ){
+    firstClick = true;
+    inbig = true;
+  }
+}
+window.onresize = resetClick;
 
 
 
