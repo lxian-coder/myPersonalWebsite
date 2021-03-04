@@ -3,13 +3,12 @@ let inbig = true;
 
 
     $(".headerSvg").click(function () {
-         if(firstClick){
-          $(".dropMenu__body").css({ "display":"flex","flex-direction":"column"});
-          console.log("jsdj");
-           firstClick = false;
-           inbig = false;
-        
-        }else{
+           if(firstClick){
+           $(".li").css("display","flex");
+            console.log("jsdj");
+            firstClick = false;
+            inbig = false;
+         }else{
           $(".dropMenu__body").slideToggle(450);
          }
 }) 

@@ -46,9 +46,16 @@ p {
   margin: auto;
 }
 
+@media only screen and (max-width: 800px) {
+  .li {
+    display: none;
+  }
+}
+
 .dropMenu__body {
   list-style: none;
   width: 100%;
+  display: run-in;
 }
 @media only screen and (min-width: 801px) {
   .dropMenu__body {
