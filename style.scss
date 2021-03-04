@@ -16,6 +16,7 @@ header{
     align-items: center;
     height: 60px;
     width: 100%;
+
 }
 p{
     color:darken($color:grey, $amount: 15);
@@ -675,7 +676,18 @@ textarea:focus, input:focus {
     position: relative;
 }
 .homepart1{
-    margin-top: 16%;
+    @media only screen and (min-width:1024px) {
+        margin-top: 8%;
+        
+    }
+    @media only screen and (min-width:500px) and (max-width:1024px) {
+        margin-top: 16%;
+        
+    }
+    @media only screen and (max-width:500px)  {
+        margin-top: 25%;
+        
+    }
 }
 .text{
     font-size: 25px;
@@ -786,26 +798,13 @@ textarea:focus, input:focus {
    
 }
 .homeContainer{
-    @media only screen  and (max-width:360px) {
-        min-height: 500px;
-    }
-    @media only screen  and (min-width:400px) and (max-width:590px){
-        min-height: 700px;
-    }
-    @media only screen  and (min-width:590px) and (max-width:743px){
-        min-height: 800px;
-    }
-    @media only screen  and (min-width:744px) and (max-width:899px){
-        min-height: 1000px;
-    }
-    @media only screen  and (min-width:900px) {
-        min-height: 1200px;
-    }
+  
     min-height: 1200px;
     width: 100%;
     background-image: url(./assets/homeBackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 // little games page

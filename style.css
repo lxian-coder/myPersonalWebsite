@@ -665,8 +665,20 @@ textarea:focus, input:focus {
   position: relative;
 }
 
-.homepart1 {
-  margin-top: 16%;
+@media only screen and (min-width: 1024px) {
+  .homepart1 {
+    margin-top: 8%;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 1024px) {
+  .homepart1 {
+    margin-top: 16%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .homepart1 {
+    margin-top: 25%;
+  }
 }
 
 .text {
@@ -783,31 +795,7 @@ textarea:focus, input:focus {
   background-image: url(./assets/homeBackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media only screen and (max-width: 360px) {
-  .homeContainer {
-    min-height: 500px;
-  }
-}
-@media only screen and (min-width: 400px) and (max-width: 590px) {
-  .homeContainer {
-    min-height: 700px;
-  }
-}
-@media only screen and (min-width: 590px) and (max-width: 743px) {
-  .homeContainer {
-    min-height: 800px;
-  }
-}
-@media only screen and (min-width: 744px) and (max-width: 899px) {
-  .homeContainer {
-    min-height: 1000px;
-  }
-}
-@media only screen and (min-width: 900px) {
-  .homeContainer {
-    min-height: 1200px;
-  }
+  background-position: center;
 }
 
 .drumbody {
