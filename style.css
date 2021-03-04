@@ -687,7 +687,6 @@ textarea:focus, input:focus {
   border: solid grey 0.9px;
   line-height: 40px;
   border-radius: 10px;
-  margin-top: 30px;
   margin-left: 37%;
   position: relative;
   overflow: hidden;
@@ -781,26 +780,31 @@ textarea:focus, input:focus {
 .homeContainer {
   min-height: 1200px;
   width: 100%;
-  background-image: url(./assets/homeBackgroundtext.jpg);
+  background-image: url(./assets/homeBackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media only screen and (max-width: 360px) {
   .homeContainer {
-    min-height: 450px;
+    min-height: 500px;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (min-width: 400px) and (max-width: 590px) {
   .homeContainer {
-    min-height: 600px;
+    min-height: 700px;
   }
 }
-@media only screen and (min-width: 426px) and (max-width: 740px) {
+@media only screen and (min-width: 590px) and (max-width: 743px) {
   .homeContainer {
     min-height: 800px;
   }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 744px) and (max-width: 899px) {
+  .homeContainer {
+    min-height: 1000px;
+  }
+}
+@media only screen and (min-width: 900px) {
   .homeContainer {
     min-height: 1200px;
   }
