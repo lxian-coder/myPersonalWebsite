@@ -8,7 +8,7 @@ let inbig = true;
           console.log("jsdj");
            firstClick = false;
            inbig = false;
-           $(".dropMenu__body").slideToggle(450);
+        
         }else{
           $(".dropMenu__body").slideToggle(450);
          }
