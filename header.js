@@ -1,25 +1,25 @@
-let firstClick = true;
+let open_close = false;
 let inbig = true;
 
 
     $(".headerSvg").click(function () {
-           if(firstClick){
+           if(!open_close){
            $(".li").css("display","flex");
             console.log("jsdj");
-            firstClick = false;
-            inbig = false;
-         }else{
-          $(".dropMenu__body").slideToggle(450);
-         }
+            open_close =true;
+           }else{
+              $(".li").css("display","none");
+              open_close=false;
+            }
 }) 
 
-function resetClick(){
-  if(window.outerWidth > 800 && inbig === false ){
-    firstClick = true;
-    inbig = true;
-  }
-}
-window.onresize = resetClick;
+// function resetClick(){
+//   if(window.outerWidth > 800 && inbig === false ){
+//     firstClick = true;
+//     inbig = true;
+//   }
+// }
+// window.onresize = resetClick;
 
 
 
