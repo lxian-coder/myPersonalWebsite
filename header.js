@@ -1,29 +1,14 @@
-let firstClick = true;
-let inSmall = true;
+
 
 $(document).ready(function () {
     $(".headerSvg").click(function () {
-         if(firstClick){
-          $(".dropMenu__body").css({ "display":"flex", "flex-direction":"column"});
-         }else{
           $(".dropMenu__body").slideToggle(450);
-          console.log("toggle");
-         
-         } 
-         firstClick = false;
-         inSmall = true;
-} )})
+         } )
+} )
 
 
-function noneDropMenu(){
-  if(window.outerWidth > 800 && inSmall){
-    $(".dropMenu__body").css('display','none');
-    console.log("goo");
-    inSmall = false;
-    firstClick = true;
-  }
-}
-   window.onresize = noneDropMenu;
+
+
 
 
 //锁定正在访问的网页标签变色 

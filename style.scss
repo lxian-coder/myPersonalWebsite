@@ -52,10 +52,15 @@ p{
    .dropMenu__body{
        list-style: none;
        width: 100%;
+       @media only screen and (min-width:801px) {
        display: none;
-    
    };
-     
+   @media only screen and (max-width:800px) {
+    display: flex;
+    flex-direction: column;
+    
+};
+}
 
 .li{
     margin-top: 10px;
