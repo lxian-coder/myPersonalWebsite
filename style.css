@@ -46,11 +46,10 @@ p {
   margin: auto;
 }
 
-.dropMenu {
-  width: 100%;
-}
 .dropMenu__body {
   list-style: none;
+  width: 100%;
+  display: none;
 }
 
 .li {
@@ -60,12 +59,18 @@ p {
   font-weight: 800;
 }
 
-.none {
-  display: none !important;
-}
-
 .headerSvg {
   margin-right: 3rem;
+}
+@media only screen and (max-width: 800px) {
+  .headerSvg {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .headerSvg {
+    display: none;
+  }
 }
 
 .name {
@@ -90,6 +95,16 @@ p {
   justify-content: space-around;
   align-items: center;
   margin-right: 9.5rem;
+}
+@media only screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .menu {
+    display: flex;
+  }
 }
 .menu__item {
   margin-left: 2rem;
@@ -157,6 +172,13 @@ p {
   box-shadow: 3px 10px 20px 10px #ccc;
   margin-bottom: 13%;
 }
+@media only screen and (max-width: 800px) {
+  .side1Container {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 150px;
+  }
+}
 @media only screen and (min-width: 801px) {
   .side1Container {
     max-width: 22%;
@@ -174,6 +196,11 @@ p {
 
 .side1Container__part1__img {
   width: 100%;
+}
+@media only screen and (max-width: 800px) {
+  .side1Container__part1__img {
+    margin-top: 0px;
+  }
 }
 
 .side1Container__part1__icons {
@@ -245,8 +272,8 @@ p {
 }
 .attachment__download::after {
   content: " ";
-  height: 110%;
-  width: 110%;
+  height: 120%;
+  width: 120%;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -294,6 +321,9 @@ p {
 @media only screen and (max-width: 800px) {
   .side2Container {
     max-width: 100%;
+    margin-left: 9px;
+    margin-right: 9px;
+    margin-top: 0px;
   }
 }
 .side2Container__part2 {
@@ -757,7 +787,6 @@ textarea:focus, input:focus {
 }
 
 .drumbody {
-  text-align: center;
   background-color: #283149;
   width: 100%;
   min-height: 900px;

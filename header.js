@@ -1,45 +1,32 @@
-let turn = true;
-let dropMenuStatus = false;
-// when users open a new page, app need to display correct content according to the screen width
-$(".dropMenu__body").addClass('none');
-if(window.innerWidth <= 800){
-   // find the screen is small
-    
-    $(".menu").addClass('none');
-}else{
-    $(".headerSvg").addClass('none');
-    turn = true;
-}
-
-
+let firstClick = true;
+let inSmall = true;
 
 $(document).ready(function () {
     $(".headerSvg").click(function () {
-        $(".dropMenu__body").removeClass('none');
-        $(".dropMenu").slideToggle(450);
+         if(firstClick){
+          $(".dropMenu__body").css({ "display":"flex", "flex-direction":"column"});
+         }else{
+          $(".dropMenu__body").slideToggle(450);
+          console.log("toggle");
+         
+         } 
+         firstClick = false;
+         inSmall = true;
 } )})
 
+
+function noneDropMenu(){
+  if(window.outerWidth > 800 && inSmall){
+    $(".dropMenu__body").css('display','none');
+
+    console.log("goo");
   
-function resize() {
-
-   width = window.innerWidth;
-   // if screen shrink lower than 800, move menu and display svg
-   if(width<800 && turn){
-    $(".menu").addClass('none');
-    $(".headerSvg").removeClass('none');
-    $(".dropMenu__body").removeClass('none');
-       turn = false;
-   }
-   // if screen back to more than 800px, header back to normal by toggle twice.
-   if(width >= 800 && turn === false){
-    $(".menu").removeClass('none');
-    $(".headerSvg").addClass('none');
-    $(".dropMenu__body").addClass('none');
-      turn=true;
+    inSmall = false;
+    firstClick = true;
+  }
 }
+   window.onresize = noneDropMenu;
 
-}
-window.onresize = resize;
 
 //锁定正在访问的网页标签变色 
 let url = window.location.pathname;

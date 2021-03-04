@@ -46,13 +46,15 @@ p{
          margin: auto;
      }
 }
-.dropMenu{
-   width: 100%;
-   &__body{
-       list-style: none;
-   };
-}
 
+   
+   .dropMenu__body{
+       list-style: none;
+       width: 100%;
+       display: none;
+    
+   };
+     
 
 .li{
     margin-top: 10px;
@@ -60,15 +62,18 @@ p{
     margin-left: 20px;
     font-weight: 800;
 }
-.none{
-    display: none !important;
-    
-}
 
 
 .headerSvg{
     margin-right: 3rem;
-    
+    @media only screen and  (max-width:800px){
+        display: flex;
+
+       }
+     
+       @media only screen and (min-width: 801px){
+           display: none;
+       }
 }
 .name{
    margin-left: 2%;
@@ -86,6 +91,13 @@ p{
 }
 
 .menu{
+    @media only screen and  (max-width:800px){
+     display: none;
+    }
+  
+    @media only screen and (min-width: 801px){
+        display: flex;
+    }
     list-style: none;
     max-width: 35%;
     width: 100%;
@@ -153,6 +165,11 @@ p{
 // about me  page
 .side1Container{
     box-sizing: border-box;
+    @media only screen and  (max-width:800px){
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 150px;
+    }
   
     @media only screen and (min-width: 801px){
         max-width: 22%;
@@ -180,6 +197,10 @@ p{
 }
 .side1Container__part1__img{
     width: 100%;
+    @media only screen and  (max-width:800px){
+    
+        margin-top: 0px;
+    }
 }
 
 .side1Container__part1__icons{
@@ -247,8 +268,8 @@ p{
     box-shadow: 0px 10px 15px 3px rgb(0 0 0 / 30%);
     &::after{
         content: " ";
-        height: 110%;
-        width: 110%;
+        height: 120%;
+        width: 120%;
         position: absolute;
         left: 0px;
         top: 0px;
@@ -288,6 +309,9 @@ p{
  
     @media only screen  and (max-width:800px) {
         max-width:100%;
+        margin-left: 9px;
+        margin-right: 9px;
+        margin-top: 0px;
     }
     box-shadow: 3px 10px 20px 10px #ccc;
     padding: 3% 5%;
@@ -770,7 +794,7 @@ textarea:focus, input:focus {
 
 // little games page
 .drumbody {
-    text-align: center;
+    
     background-color: #283149;
     width: 100%;
     min-height: 900px;
