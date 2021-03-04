@@ -55,12 +55,6 @@ p {
     display: none;
   }
 }
-@media only screen and (max-width: 800px) {
-  .dropMenu__body {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 .li {
   margin-top: 10px;
