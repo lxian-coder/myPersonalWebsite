@@ -4,7 +4,7 @@ let inbig = true;
 
     $(".headerSvg").click(function () {
          if(firstClick){
-          $(".li").css({ "display":"flex"});
+          $(".dropMenu__body").css({ "display":"flex","flex-direction":"column"});
           console.log("jsdj");
            firstClick = false;
            inbig = false;
