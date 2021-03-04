@@ -49,11 +49,7 @@ p {
 .dropMenu__body {
   list-style: none;
   width: 100%;
-}
-@media only screen and (min-width: 801px) {
-  .dropMenu__body {
-    display: none;
-  }
+  display: none;
 }
 
 .li {
