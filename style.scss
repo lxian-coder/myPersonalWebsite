@@ -21,6 +21,66 @@ header{
 p{
     color:darken($color:grey, $amount: 15);
 }
+@keyframes snow{
+0%{
+    background-position: 0 0, 0 0;
+}
+100%{
+    background-position: 500px 500px, 1000px 500px;
+}
+
+}
+
+
+
+.snowEffect{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./assets/snowlittle1.png), url(./assets/snowlittle2.png);
+    animation: snow 5s  infinite linear;
+    pointer-events: none;
+    z-index: 0;
+
+}
+.snowBg{
+    z-index: 0;
+    background-image: url(./assets/snow4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   width: 100%;
+   background-attachment: fixed;
+}
+.snowBgResume{
+    z-index: 0;
+    background-image: url(./assets/snow3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   width: 100%;
+   background-attachment: fixed;
+}
+.snowBgContact{
+    z-index: 0;
+    background-image: url(./assets/snow5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   width: 100%;
+   background-attachment: fixed;
+}
+.snowBgBlog{
+    z-index: 0;
+    background-image: url(./assets/snow6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   width: 100%;
+   background-attachment: fixed;
+}
 .container{
     position: relative;
     display: flex;
@@ -31,6 +91,7 @@ p{
     width: 100%;
     margin:auto;
 }
+
 .headerContainer{
      display: flex;
      background: white;
@@ -47,6 +108,7 @@ p{
          margin: auto;
      }
 }
+
 .li{
     @media only screen and (max-width:800px) {
         display: none;
@@ -157,7 +219,7 @@ p{
 }
 
 .footerContainer{
-  
+    background-color: white;
     width: 100%;
     height: 60px;
     display: flex;
@@ -176,6 +238,8 @@ p{
 // about me  page
 .side1Container{
     box-sizing: border-box;
+    z-index: 1;
+    background-color: white;
     @media only screen and  (max-width:800px){
         padding-left: 5px;
         padding-right: 5px;
@@ -316,8 +380,8 @@ p{
 }
 
 .side2Container{
-
- 
+   background-color: white;
+   z-index: 1;
     @media only screen  and (max-width:800px) {
         max-width:100%;
         margin-left: 9px;
