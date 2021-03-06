@@ -13,13 +13,7 @@ let inbig = true;
             }
 }) 
 
-// function resetClick(){
-//   if(window.outerWidth > 800 && inbig === false ){
-//     firstClick = true;
-//     inbig = true;
-//   }
-// }
-// window.onresize = resetClick;
+
 
 
 
