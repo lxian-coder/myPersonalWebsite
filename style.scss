@@ -2,6 +2,7 @@
 
 $myblue:#5371ff;
 $mygrey:#eee;
+$myword:#5a5a5a;
 
 *{
     margin: 0;
@@ -45,7 +46,7 @@ p{
     z-index: 0;
 
 }
-.snowBg{
+.snowBg, .drumback{
     z-index: 0;
     background-image: url(./assets/snow4.jpg);
     background-repeat: no-repeat;
@@ -80,6 +81,18 @@ p{
     background-position: center;
    width: 100%;
    background-attachment: fixed;
+}
+
+.snowBgSimon{
+    background-image: url(./assets/snow6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   width: 100%;
+   background-attachment: fixed;
+
+
+ 
 }
 .container{
     position: relative;
@@ -887,7 +900,7 @@ textarea:focus, input:focus {
 
 // little games page
 .drumbody {
-    
+    opacity: 0.9;
     background-color: #283149;
     width: 100%;
     min-height: 900px;
@@ -899,6 +912,7 @@ textarea:focus, input:focus {
     color: #DBEDF3;
     font-family: "Arvo", cursive;
     text-shadow: 3px 0 #DA0463;
+    text-align: center;
   }
   
 
@@ -967,4 +981,152 @@ textarea:focus, input:focus {
     margin: 10px;
     background-color: white;
   }
-  
+ .skillIcons{
+     display: flex;
+     justify-content: flex-start;
+     flex-wrap: wrap;
+     &__wrapper{
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+         justify-content: flex-start;
+         margin-bottom: 10px;
+         margin-top: 20px;
+         width: 33%;
+         &__loaded{
+            width: 55px;
+            height: 55px;
+            justify-content: flex-start;
+            margin-right: 15px;
+           &:hover{
+            animation: upDown 1s;
+           } 
+         }
+         &__description{
+             color: #5a5a5a;
+             font-size: 13px;
+            }
+     }
+ }
+ 
+ .skillIcons__text{
+     width: 100%;
+     margin-top: 40px;
+     font-size: 1rem;
+     color:#5a5a5a;
+     font-weight: 700;
+     justify-content: center;
+ }
+
+ .games{
+     width: 100px;
+     min-height: 1000px ;
+ }
+
+ .gameButton{
+     margin-top: 30px;
+     font-size: 20px;
+     color: $myword;
+     text-align: center;
+     border: solid 1px;
+     border-radius: 10px;
+     height: 55px;
+     line-height: 55px;
+     margin-top: 50px;
+     overflow: hidden;
+     position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 110%;
+            width: 150%;
+            background-color: $myblue;
+            z-index: 0;
+            transform-origin: right;
+            transition: all 0.7s ease;
+            transform: scale(0,1) skewX(-45deg);
+            z-index: 0;
+        }
+        &:hover::after{
+            transform: scale(1.3,1) skewX(-45deg);
+            z-index: 0;
+        }
+     &__a{
+        text-decoration: none;
+        transition: all 0.5s ease;
+        position: relative;
+        z-index: 1;
+        
+     &:hover{
+         color: white;
+       z-index: 1;
+     } 
+    }
+ }
+
+ // simonGame page
+    .simonbody {
+        text-align: center;
+        background-color: #011F3F;
+        width: 100%;
+        min-height: 1000px;
+        opacity: 0.9;
+      
+      }
+    .row{
+       opacity: 1 !important;
+    }
+      #level-title {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 3rem;
+        margin:  5%;
+        color: #FEF2BF;
+      }
+      
+      .simonContainer {
+        display: block;
+        width: 50%;
+        margin: auto;
+        
+      
+      }
+      
+      .btn {
+        margin: 25px;
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        border: 10px solid black;
+        border-radius: 20%;
+      }
+      
+      .game-over {
+        background-color: red;
+        opacity: 0.8;
+      }
+      
+      .red {
+        background-color: red;
+        
+      }
+      
+      .green {
+        background-color: green;
+      }
+      
+      .blue {
+        background-color: blue;
+      }
+      
+      .yellow {
+        background-color: yellow;
+      }
+      
+      .pressed {
+        box-shadow: 0 0 20px white;
+        background-color: grey;
+      }
+      
+ 
