@@ -253,6 +253,7 @@ p{
     box-sizing: border-box;
     z-index: 1;
     background-color: white;
+    opacity: 0.97;
     @media only screen and  (max-width:800px){
         padding-left: 5px;
         padding-right: 5px;
@@ -395,6 +396,7 @@ p{
 .side2Container{
    background-color: white;
    z-index: 1;
+  opacity: 0.97;
     @media only screen  and (max-width:800px) {
         max-width:100%;
         margin-left: 9px;

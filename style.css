@@ -244,6 +244,7 @@ p {
   box-sizing: border-box;
   z-index: 1;
   background-color: white;
+  opacity: 0.97;
   min-width: 197.5px;
   width: 100%;
   border-radius: 10px;
@@ -392,6 +393,7 @@ p {
 .side2Container {
   background-color: white;
   z-index: 1;
+  opacity: 0.97;
   box-shadow: 3px 10px 20px 10px #ccc;
   padding: 3% 5%;
   box-sizing: border-box;
