@@ -1001,6 +1001,7 @@ textarea:focus, input:focus {
      &__wrapper{
          display: flex;
          justify-content: flex-start;
+         flex-wrap: wrap;
          align-items: center;
          justify-content: flex-start;
          margin-bottom: 10px;
@@ -1141,5 +1142,5 @@ textarea:focus, input:focus {
         box-shadow: 0 0 20px white;
         background-color: grey;
       }
-      
+    
  
