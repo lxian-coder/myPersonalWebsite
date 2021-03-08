@@ -760,6 +760,14 @@ textarea:focus, input:focus {
     transform: scale(1,1);
    }
 
+.gamesContainer{
+    @media only screen and  (max-width:800px){
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 150px;
+    }
+}
+
 
 // home page
 .homeBodyContainer{
@@ -767,6 +775,7 @@ textarea:focus, input:focus {
     width: 100%;
     padding: 30px 30px;
     position: relative;
+
 }
 .homepart1{
     @media only screen and (min-width:1024px) {
@@ -898,6 +907,8 @@ textarea:focus, input:focus {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+
 }
 
 // little games page
