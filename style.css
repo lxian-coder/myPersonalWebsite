@@ -315,6 +315,8 @@ p {
 
 .iconP {
   width: 42%;
+  position: relative;
+  top: 1px;
 }
 
 .side1Container__part2 {
@@ -329,6 +331,9 @@ p {
 .details__h3 {
   color: #51535d;
   margin-bottom: 5px;
+}
+.details__a {
+  color: #5a5a5a;
 }
 
 .side1__attachememts {
@@ -547,6 +552,7 @@ p {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
+  padding-bottom: 15px;
   margin-left: 30px;
   margin-bottom: 50px;
   position: relative;
@@ -585,7 +591,48 @@ p {
 .entry__p {
   font-size: 13px;
   letter-spacing: 0.7;
-  max-width: 400px;
+  max-width: 700px;
+}
+.entry__a {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.entry__a:hover {
+  color: blue;
+}
+.entry__a::after {
+  content: " ";
+  height: 3px;
+  max-width: 130px;
+  width: 100%;
+  border-radius: 20px;
+  position: absolute;
+  left: 20px;
+  top: 60px;
+  background: #5371ff;
+  transition: all 0.3s ease;
+  transform-origin: left;
+  transform: scale(0, 1);
+}
+.entry__a:hover::after {
+  transform: scale(2, 1);
+}
+.entry__schoolBlock {
+  font-size: 13px;
+  letter-spacing: 0.7;
+  display: flex;
+}
+.entry__schoolTime {
+  color: #5371ff;
+}
+.entry__school {
+  border-left: solid #eee;
+  padding-left: 10px;
+  margin-left: 10px;
+  color: #a7a7a7;
+}
+.entry__img {
+  max-width: 80px;
 }
 
 .lastEntry {
@@ -1118,6 +1165,11 @@ textarea:focus, input:focus {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+.education {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

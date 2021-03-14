@@ -310,6 +310,7 @@ p{
     
 }
 .icon{
+    
     border-radius: 4px;
     width: 13%;
     background: seashell;
@@ -321,6 +322,8 @@ p{
 }
 .iconP{
     width: 42%;
+    position: relative;
+    top: 1px;
 }
 
  .side1Container__part2{
@@ -333,6 +336,9 @@ p{
      &__h3{
         color:#51535d;
         margin-bottom: 5px;
+     }
+     &__a{
+         color: $myword;
      }
 }
 .side1__attachememts{
@@ -551,6 +557,7 @@ p{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
+    padding-bottom: 15px;
     margin-left: 30px;
     margin-bottom: 50px;
     position: relative;
@@ -581,19 +588,64 @@ p{
         position:absolute;
         left: -27px;
         top: 21.2px;
-    
         z-index: 1;
        
     }
 
     &__h4{
         margin-bottom: 20px;
+  
+        
     }
     &__p{
         font-size: 13px;
         letter-spacing: 0.7;
-        max-width: 400px;
+        max-width: 700px;
     }
+    &__a{
+        text-decoration: none;
+        transition: all 0.2s ease;
+        &:hover{
+            color: blue;
+        }
+        &::after{
+         
+            content: " ";
+            height: 3px;
+            max-width: 130px;
+            width: 100%;
+            border-radius: 20px;
+            position: absolute;
+            left: 20px;
+            top: 60px;
+            background: $myblue;
+            transition: all 0.3s ease;
+            transform-origin: left;
+            transform: scale(0,1) ;
+        }
+        &:hover::after{
+            transform: scale(2,1);
+        }
+    }
+    &__schoolBlock{
+        font-size: 13px;
+        letter-spacing: 0.7;
+        display: flex;
+     
+    }
+    &__schoolTime{
+        color: $myblue;
+    }
+    &__school{
+        border-left: solid $mygrey;
+        padding-left:10px ;
+        margin-left: 10px;
+        color: lighten($myword,30%);
+    }
+    &__img{
+        max-width: 80px;
+    }
+
 }
 
 .lastEntry{
@@ -1142,5 +1194,9 @@ textarea:focus, input:focus {
         box-shadow: 0 0 20px white;
         background-color: grey;
       }
-    
- 
+  
+  
+      .education{
+        display: flex;
+        justify-content: space-between;
+    }
