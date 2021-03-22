@@ -14,11 +14,6 @@ let inbig = true;
 }) 
 
 
-
-
-
-
-
 //锁定正在访问的网页标签变色 
 let url = window.location.pathname;
 console.log( url);
