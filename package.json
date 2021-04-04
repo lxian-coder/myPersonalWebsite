@@ -1,0 +1,58 @@
+{
+  "name": "mypersonalwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config ./webpack.config.js --mode development",
+    "start": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxian-coder/myPersonalWebsite.git"
+  },
+  "author": "Darcy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lxian-coder/myPersonalWebsite/issues"
+  },
+  "homepage": "https://github.com/lxian-coder/myPersonalWebsite#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "scss-loader": "^0.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.13",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@babel/runtime": "^7.13.10",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@types/webpack": "^5.0.0",
+    "@types/webpack-dev-server": "^3.11.3",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.2.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.8",
+    "postcss-loader": "^5.2.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.18",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

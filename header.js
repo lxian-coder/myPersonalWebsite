@@ -11,10 +11,10 @@ let inbig = true;
               $(".li").css("display","none");
               open_close=false;
             }
-}) 
+})
 
 
-//锁定正在访问的网页标签变色 
+//锁定正在访问的网页标签变色
 let url = window.location.pathname;
 console.log( url);
 // find the target  <a>  and add a class
